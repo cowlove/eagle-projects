@@ -313,6 +313,53 @@
 <rectangle x1="20.066" y1="2.286" x2="20.574" y2="2.794" layer="51"/>
 <rectangle x1="20.066" y1="-0.254" x2="20.574" y2="0.254" layer="51"/>
 </package>
+<package name="JSTPH4">
+<description>4 Pin JST PH Series Female Connector&lt;br/&gt;
+Righ-Angle SMT</description>
+<wire x1="-6" y1="3" x2="6" y2="3" width="0.2032" layer="51"/>
+<wire x1="6" y1="3" x2="6" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-6" y1="-4.5" x2="-6" y2="3" width="0.2032" layer="51"/>
+<wire x1="5" y1="-2" x2="-5" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-5" y1="-2" x2="-5" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-5" y1="-4.5" x2="-6" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="6" y1="-4.5" x2="5" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="5" y1="-4.5" x2="5" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-0.5" x2="-6" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-4.5" x2="-5" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-4.5" x2="-5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-2" x2="-3.75" y2="-2" width="0.2032" layer="21"/>
+<wire x1="3.75" y1="-2" x2="5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="5" y1="-2" x2="5" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="5" y1="-4.5" x2="6" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="6" y1="-4.5" x2="6" y2="-0.5" width="0.2032" layer="21"/>
+<smd name="1" x="-3" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="2" x="-1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="NC1" x="-5.7" y="1.5" dx="3.4" dy="1.7" layer="1" rot="R90"/>
+<smd name="NC2" x="5.7" y="1.5" dx="3.4" dy="1.7" layer="1" rot="R90"/>
+<smd name="3" x="1" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<smd name="4" x="3" y="-3.7" dx="1" dy="4.6" layer="1"/>
+<text x="-4.318" y="1.905" size="0.8128" layer="25" ratio="18">&gt;Name</text>
+<text x="-4.318" y="1.016" size="0.4064" layer="27" ratio="10">&gt;Value</text>
+</package>
+<package name="JST_SH4">
+<smd name="2" x="-0.5" y="2.514" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="0.5" y="2.514" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="1" x="-1.5" y="2.514" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="1.5" y="2.514" dx="1.55" dy="0.6" layer="1" rot="R90"/>
+<smd name="MT1" x="-2.8" y="-1.386" dx="1.8" dy="1.2" layer="1" rot="R90"/>
+<smd name="MT2" x="2.8" y="-1.386" dx="1.8" dy="1.2" layer="1" rot="R90"/>
+<wire x1="-3" y1="-2.086" x2="-3" y2="2.164" width="0.1524" layer="51"/>
+<wire x1="-3" y1="2.164" x2="3.1" y2="2.164" width="0.1524" layer="51"/>
+<wire x1="3.1" y1="2.164" x2="3.1" y2="-2.086" width="0.1524" layer="51"/>
+<wire x1="3.1" y1="-2.086" x2="-3" y2="-2.086" width="0.1524" layer="51"/>
+<wire x1="-3" y1="-0.386" x2="-3" y2="2.214" width="0.1524" layer="21"/>
+<wire x1="-3" y1="2.214" x2="-1.9" y2="2.214" width="0.1524" layer="21"/>
+<wire x1="1.9" y1="2.214" x2="3.1" y2="2.214" width="0.1524" layer="21"/>
+<wire x1="3.1" y1="2.214" x2="3.1" y2="-0.386" width="0.1524" layer="21"/>
+<wire x1="-2.1" y1="-2.086" x2="2.1" y2="-2.086" width="0.1524" layer="21"/>
+<text x="-4.6" y="3.614" size="1.778" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SPI_TFT_TOUCH">
@@ -362,6 +409,21 @@
 <pin name="IO22_SCL" x="2.54" y="-12.7" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="VBAT" x="2.54" y="-15.24" visible="pin" length="short" direction="pas" function="dot"/>
 <pin name="V50" x="2.54" y="-17.78" visible="pin" length="short" direction="pwr" function="dot"/>
+</symbol>
+<symbol name="STEMMA_I2C">
+<wire x1="-3.81" y1="-5.08" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="7.62" x2="-3.81" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="7.62" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-3.81" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="5.08" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="V+" x="0" y="2.54" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="SDA" x="0" y="0" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="SCL" x="0" y="-2.54" visible="pin" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="MOUNTING">
+<pin name="MT" x="0" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -426,6 +488,41 @@
 </device>
 </devices>
 </deviceset>
+<deviceset name="STEMMA_I2C" prefix="CONN">
+<gates>
+<gate name="G$1" symbol="STEMMA_I2C" x="0" y="0"/>
+<gate name="G$2" symbol="MOUNTING" x="-15.24" y="5.08"/>
+<gate name="G$3" symbol="MOUNTING" x="-15.24" y="0"/>
+</gates>
+<devices>
+<device name="_RASMT" package="JSTPH4">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="V+" pad="2"/>
+<connect gate="G$2" pin="MT" pad="NC1"/>
+<connect gate="G$3" pin="MT" pad="NC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_QT" package="JST_SH4">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="V+" pad="2"/>
+<connect gate="G$2" pin="MT" pad="MT1"/>
+<connect gate="G$3" pin="MT" pad="MT2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -440,6 +537,7 @@
 <parts>
 <part name="U$1" library="00jim" deviceset="SPI_TFT_TOUCH" device=""/>
 <part name="JP1" library="00jim" deviceset="TTGO-TS-ESP32" device=""/>
+<part name="CONN1" library="00jim" deviceset="STEMMA_I2C" device="_QT"/>
 </parts>
 <sheets>
 <sheet>
@@ -453,6 +551,10 @@
 <instance part="JP1" gate="G$1" x="53.34" y="48.26" smashed="yes">
 <attribute name="NAME" x="52.07" y="76.835" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.07" y="20.32" size="1.778" layer="96"/>
+</instance>
+<instance part="CONN1" gate="G$1" x="116.84" y="66.04" smashed="yes">
+<attribute name="NAME" x="113.03" y="74.295" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.03" y="58.42" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -479,6 +581,11 @@
 <wire x1="93.98" y1="43.18" x2="83.82" y2="43.18" width="0.1524" layer="91"/>
 <label x="83.82" y="43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="CONN1" gate="G$1" pin="GND"/>
+<wire x1="116.84" y1="71.12" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
+<label x="106.68" y="71.12" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -495,6 +602,11 @@
 <pinref part="U$1" gate="G$1" pin="LED"/>
 <wire x1="93.98" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
 <label x="83.82" y="58.42" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONN1" gate="G$1" pin="V+"/>
+<wire x1="116.84" y1="68.58" x2="106.68" y2="68.58" width="0.1524" layer="91"/>
+<label x="106.68" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -521,9 +633,9 @@
 <label x="83.82" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="IO21_SDA"/>
-<wire x1="55.88" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
-<label x="45.72" y="40.64" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="VP"/>
+<wire x1="55.88" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+<label x="45.72" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -562,9 +674,9 @@
 <label x="83.82" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="IO22_SCL"/>
-<wire x1="55.88" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
-<label x="45.72" y="35.56" size="1.778" layer="95"/>
+<pinref part="JP1" gate="G$1" pin="IO00_XX"/>
+<wire x1="55.88" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
+<label x="45.72" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -587,6 +699,30 @@
 <pinref part="JP1" gate="G$1" pin="IO33"/>
 <wire x1="55.88" y1="68.58" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
 <label x="45.72" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="IO21_SDA"/>
+<wire x1="55.88" y1="40.64" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
+<label x="45.72" y="40.64" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONN1" gate="G$1" pin="SDA"/>
+<wire x1="116.84" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
+<label x="106.68" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCL" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="IO22_SCL"/>
+<wire x1="55.88" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<label x="45.72" y="35.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONN1" gate="G$1" pin="SCL"/>
+<wire x1="116.84" y1="63.5" x2="106.68" y2="63.5" width="0.1524" layer="91"/>
+<label x="106.68" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
