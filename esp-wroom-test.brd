@@ -788,6 +788,27 @@ Parts Updated:
 </package>
 </packages>
 </library>
+<library name="MF_Discrete_Semiconductor">
+<packages>
+<package name="SOT-23-3">
+<description>&lt;b&gt;Description:&lt;/b&gt; Standard SOT-23-3 footprint.&lt;br/&gt;</description>
+<smd name="P$1" x="-1" y="0.95" dx="0.9" dy="0.8" layer="1"/>
+<smd name="P$2" x="-1" y="-0.95" dx="0.9" dy="0.8" layer="1"/>
+<smd name="P$3" x="1" y="0" dx="0.9" dy="0.8" layer="1"/>
+<wire x1="-1.8" y1="1.6" x2="-1.8" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-1.6" x2="1.8" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="1.8" y1="-1.6" x2="1.8" y2="1.6" width="0.127" layer="21"/>
+<wire x1="1.8" y1="1.6" x2="-1.8" y2="1.6" width="0.127" layer="21"/>
+<text x="-1.8" y="-2.88" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<polygon width="0.127" layer="21">
+<vertex x="-1.6" y="2.2" curve="-90"/>
+<vertex x="-1.4" y="2.4" curve="-90"/>
+<vertex x="-1.2" y="2.2" curve="-90"/>
+<vertex x="-1.4" y="2" curve="-90"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1150,6 +1171,13 @@ design rules under a new name.</description>
 <element name="-_+_G_V_T_R_E_1" library="SparkFun-Connectors" package="1X08" value="MF-CON-2.54mm-01x08" x="42.164" y="36.322" smashed="yes" rot="R270"/>
 <element name="CONN1" library="01jim" package="JST_SH4" value="STEMMA_I2C_QT" x="3.556" y="26.416" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.17" y="31.016" size="1.778" layer="25" rot="R270"/>
+</element>
+<element name="TT1" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-MMBT3904" x="1.27" y="-8.636" smashed="yes">
+<attribute name="HOUSEPART" value="YES" x="-4.318" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MF-DSC-SOT233-MMBT3904" x="-4.318" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-0.53" y="-11.516" size="1.016" layer="25" font="vector" ratio="16"/>
+<attribute name="POPULATE" value="1" x="-4.318" y="-2.54" size="1.778" layer="27" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-MMBT3904" x="-4.318" y="-2.54" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -1885,6 +1913,15 @@ design rules under a new name.</description>
 <via x="13.23975" y="15.0495" extent="1-16" drill="0.35"/>
 <via x="16.47825" y="26.289" extent="1-16" drill="0.35"/>
 <via x="15.24" y="27.71775" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="IO21_D1">
+<contactref element="TT1" pad="P$3"/>
+</signal>
+<signal name="N$1">
+<contactref element="TT1" pad="P$2"/>
+</signal>
+<signal name="N$3">
+<contactref element="TT1" pad="P$1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
