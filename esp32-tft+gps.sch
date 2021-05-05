@@ -3305,6 +3305,39 @@ Alternate pin configuration
 <pad name="P$3" x="0.508" y="3.81" drill="0.35" diameter="0.6096" shape="long" rot="R90"/>
 <pad name="P$4" x="1.524" y="3.81" drill="0.35" diameter="0.6096" shape="long" rot="R90"/>
 </package>
+<package name="1X14_ROUND_70">
+<wire x1="-19.05" y1="0.635" x2="-19.05" y2="-0.635" width="0.2032" layer="51"/>
+<pad name="1" x="-17.78" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="2" x="-15.24" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="3" x="-12.7" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="4" x="-10.16" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="5" x="-7.62" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="6" x="-5.08" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="7" x="-2.54" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="8" x="0" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="9" x="2.54" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="10" x="5.08" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="11" x="7.62" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="12" x="10.16" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<text x="-19.1262" y="1.8288" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-19.05" y="-3.175" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
+<rectangle x1="-10.414" y1="-0.254" x2="-9.906" y2="0.254" layer="51"/>
+<rectangle x1="-12.954" y1="-0.254" x2="-12.446" y2="0.254" layer="51"/>
+<rectangle x1="-15.494" y1="-0.254" x2="-14.986" y2="0.254" layer="51"/>
+<rectangle x1="-18.034" y1="-0.254" x2="-17.526" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+<pad name="13" x="12.7" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
+<pad name="14" x="15.24" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JUMPER">
@@ -3411,6 +3444,28 @@ Alternate pin configuration
 <text x="-4.572" y="0" size="1.778" layer="94" font="vector" align="center-left">VCC</text>
 <text x="-4.572" y="-2.54" size="1.778" layer="94" font="vector" align="center-left">GND</text>
 <text x="-4.572" y="5.08" size="1.778" layer="94" font="vector" align="center-left">SCL</text>
+</symbol>
+<symbol name="SPI_TFT_TOUCH">
+<wire x1="-6.35" y1="-17.78" x2="1.27" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-17.78" x2="1.27" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="20.32" x2="-6.35" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="20.32" x2="-6.35" y2="-17.78" width="0.4064" layer="94"/>
+<text x="-6.35" y="20.955" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="T_IRQ" x="-2.54" y="17.78" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="T_DO" x="-2.54" y="15.24" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="T_DIN" x="-2.54" y="12.7" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="T_CS" x="-2.54" y="10.16" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="T_CLK" x="-2.54" y="7.62" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="S_MISO" x="-2.54" y="5.08" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="LED" x="-2.54" y="2.54" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="S_SCK" x="-2.54" y="0" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="S_MOSI" x="-2.54" y="-2.54" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="S_DC" x="-2.54" y="-5.08" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="S_RESET" x="-2.54" y="-7.62" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="S_CS" x="-2.54" y="-10.16" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="short" direction="pas" function="dot"/>
+<pin name="VCC" x="-2.54" y="-15.24" visible="pin" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4017,6 +4072,34 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </device>
 </devices>
 </deviceset>
+<deviceset name="SPI_TFT_TOUCH">
+<gates>
+<gate name="G$1" symbol="SPI_TFT_TOUCH" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X14_ROUND_70">
+<connects>
+<connect gate="G$1" pin="GND" pad="13"/>
+<connect gate="G$1" pin="LED" pad="7"/>
+<connect gate="G$1" pin="S_CS" pad="12"/>
+<connect gate="G$1" pin="S_DC" pad="10"/>
+<connect gate="G$1" pin="S_MISO" pad="6"/>
+<connect gate="G$1" pin="S_MOSI" pad="9"/>
+<connect gate="G$1" pin="S_RESET" pad="11"/>
+<connect gate="G$1" pin="S_SCK" pad="8"/>
+<connect gate="G$1" pin="T_CLK" pad="5"/>
+<connect gate="G$1" pin="T_CS" pad="4"/>
+<connect gate="G$1" pin="T_DIN" pad="3"/>
+<connect gate="G$1" pin="T_DO" pad="2"/>
+<connect gate="G$1" pin="T_IRQ" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="ESP32">
@@ -4315,6 +4398,7 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <part name="RCAN1" library="00jim" deviceset="RESISTOR" device="_0603"/>
 <part name="RCAN2" library="00jim" deviceset="RESISTOR" device="_0603"/>
 <part name="J5" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
+<part name="U$4" library="00jim" deviceset="SPI_TFT_TOUCH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4420,6 +4504,10 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <attribute name="VALUE" x="-63.5" y="162.814" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-63.5" y="173.228" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="U$4" gate="G$1" x="-50.8" y="116.84" smashed="yes">
+<attribute name="NAME" x="-57.15" y="137.795" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-57.15" y="93.98" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4471,6 +4559,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="25.4" y1="127" x2="17.78" y2="127" width="0.1524" layer="91"/>
 <label x="17.78" y="127" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+<wire x1="-53.34" y1="104.14" x2="-63.5" y2="104.14" width="0.1524" layer="91"/>
+<label x="-63.5" y="104.14" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4517,6 +4610,22 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="15.24" y1="93.98" x2="10.16" y2="93.98" width="0.1524" layer="91" style="longdash"/>
 <wire x1="10.16" y1="93.98" x2="5.08" y2="93.98" width="0.1524" layer="91" style="longdash"/>
 <junction x="10.16" y="93.98"/>
+<label x="2.54" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="VCC"/>
+<wire x1="-53.34" y1="101.6" x2="-63.5" y2="101.6" width="0.1524" layer="91"/>
+<label x="-63.5" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="LED"/>
+<wire x1="-53.34" y1="119.38" x2="-63.5" y2="119.38" width="0.1524" layer="91"/>
+<label x="-63.5" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="S_RESET"/>
+<wire x1="-53.34" y1="109.22" x2="-63.5" y2="109.22" width="0.1524" layer="91"/>
+<label x="-63.5" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXO" class="0">
@@ -4526,6 +4635,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <junction x="-129.54" y="137.16"/>
 <label x="-127" y="137.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="-162.56" y1="175.26" x2="-154.94" y2="175.26" width="0.1524" layer="91"/>
+<label x="-160.02" y="175.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RXI" class="0">
 <segment>
@@ -4533,6 +4647,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="-129.54" y1="134.62" x2="-124.46" y2="134.62" width="0.1524" layer="91"/>
 <junction x="-129.54" y="134.62"/>
 <label x="-127" y="134.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="4"/>
+<wire x1="-162.56" y1="177.8" x2="-154.94" y2="177.8" width="0.1524" layer="91"/>
+<label x="-160.02" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IO00" class="0">
@@ -4598,13 +4717,6 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="-83.82" y1="177.8" x2="-83.82" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="CAN_S" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO17"/>
-<wire x1="-129.54" y1="119.38" x2="-119.38" y2="119.38" width="0.1524" layer="91"/>
-<label x="-127" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="VCC_50" class="3">
 <segment>
 <label x="-20.32" y="193.04" size="1.778" layer="95" rot="MR0"/>
@@ -4620,34 +4732,6 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="-53.34" y1="170.18" x2="-45.72" y2="170.18" width="0.1524" layer="91"/>
 <label x="-53.34" y="170.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CANTX" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO15"/>
-<wire x1="-129.54" y1="106.68" x2="-124.46" y2="106.68" width="0.1524" layer="91" style="longdash"/>
-<label x="-127" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CANRX" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO16"/>
-<wire x1="-129.54" y1="116.84" x2="-124.46" y2="116.84" width="0.1524" layer="91" style="longdash"/>
-<label x="-127" y="116.84" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DB9_TX" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO27"/>
-<wire x1="-160.02" y1="119.38" x2="-167.64" y2="119.38" width="0.1524" layer="91"/>
-<label x="-170.18" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DB9_RX" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO26"/>
-<wire x1="-160.02" y1="121.92" x2="-167.64" y2="121.92" width="0.1524" layer="91"/>
-<label x="-170.18" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -4696,48 +4780,6 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <pinref part="TT2" gate="G$1" pin="BASE"/>
 <wire x1="-119.38" y1="175.26" x2="-116.84" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="P$2"/>
-</segment>
-</net>
-<net name="TX0" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="-162.56" y1="175.26" x2="-154.94" y2="175.26" width="0.1524" layer="91"/>
-<label x="-160.02" y="175.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RX0" class="0">
-<segment>
-<pinref part="J1" gate="G$1" pin="4"/>
-<wire x1="-162.56" y1="177.8" x2="-154.94" y2="177.8" width="0.1524" layer="91"/>
-<label x="-160.02" y="177.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RX2" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO39"/>
-<wire x1="-160.02" y1="137.16" x2="-167.64" y2="137.16" width="0.1524" layer="91" style="longdash"/>
-<label x="-167.64" y="137.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TX2" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO25"/>
-<wire x1="-160.02" y1="124.46" x2="-167.64" y2="124.46" width="0.1524" layer="91"/>
-<label x="-167.64" y="124.46" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="TX3" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO13"/>
-<wire x1="-160.02" y1="109.22" x2="-167.64" y2="109.22" width="0.1524" layer="91" style="longdash"/>
-<label x="-167.64" y="109.22" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RX3" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="GPIO34"/>
-<wire x1="-160.02" y1="134.62" x2="-167.64" y2="134.62" width="0.1524" layer="91" style="longdash"/>
-<label x="-167.64" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_HC" class="3">
@@ -4889,6 +4931,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="2.54" y1="111.76" x2="-5.08" y2="111.76" width="0.1524" layer="91"/>
 <label x="-5.08" y="111.76" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="GPIO13"/>
+<wire x1="-160.02" y1="109.22" x2="-167.64" y2="109.22" width="0.1524" layer="91"/>
+<label x="-167.64" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BUZZ" class="0">
 <segment>
@@ -4913,6 +4960,16 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="-129.54" y1="127" x2="-124.46" y2="127" width="0.1524" layer="91"/>
 <label x="-127" y="127" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="T_DO"/>
+<wire x1="-53.34" y1="132.08" x2="-63.5" y2="132.08" width="0.1524" layer="91"/>
+<label x="-63.5" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="S_MISO"/>
+<wire x1="-53.34" y1="121.92" x2="-63.5" y2="121.92" width="0.1524" layer="91"/>
+<label x="-63.5" y="121.92" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
@@ -4925,12 +4982,15 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="-129.54" y1="142.24" x2="-124.46" y2="142.24" width="0.1524" layer="91" style="longdash"/>
 <label x="-127" y="142.24" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="CLK" class="0">
 <segment>
-<pinref part="J3" gate="J1" pin="5"/>
-<wire x1="25.4" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
-<label x="17.78" y="116.84" size="1.778" layer="95"/>
+<pinref part="U$4" gate="G$1" pin="S_MOSI"/>
+<wire x1="-53.34" y1="114.3" x2="-63.5" y2="114.3" width="0.1524" layer="91"/>
+<label x="-63.5" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="T_DIN"/>
+<wire x1="-53.34" y1="129.54" x2="-63.5" y2="129.54" width="0.1524" layer="91"/>
+<label x="-63.5" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TFT_CS" class="0">
@@ -4944,6 +5004,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="-129.54" y1="121.92" x2="-121.92" y2="121.92" width="0.1524" layer="91" style="longdash"/>
 <label x="-127" y="121.92" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="S_CS"/>
+<wire x1="-53.34" y1="106.68" x2="-63.5" y2="106.68" width="0.1524" layer="91"/>
+<label x="-63.5" y="106.68" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TCH_CS" class="0">
 <segment>
@@ -4956,6 +5021,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="-129.54" y1="114.3" x2="-119.38" y2="114.3" width="0.1524" layer="91" style="longdash"/>
 <label x="-127" y="114.3" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="T_CS"/>
+<wire x1="-53.34" y1="127" x2="-63.5" y2="127" width="0.1524" layer="91"/>
+<label x="-63.5" y="127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TFT_DC" class="0">
 <segment>
@@ -4967,6 +5037,11 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <pinref part="U$3" gate="G$1" pin="GPIO32"/>
 <wire x1="-160.02" y1="129.54" x2="-167.64" y2="129.54" width="0.1524" layer="91" style="longdash"/>
 <label x="-167.64" y="129.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="S_DC"/>
+<wire x1="-53.34" y1="111.76" x2="-63.5" y2="111.76" width="0.1524" layer="91"/>
+<label x="-63.5" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TFT_RST" class="0">
@@ -4987,27 +5062,25 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 <wire x1="-129.54" y1="124.46" x2="-124.46" y2="124.46" width="0.1524" layer="91"/>
 <label x="-127" y="124.46" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J3" gate="J1" pin="5"/>
+<wire x1="25.4" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<label x="17.78" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="S_SCK"/>
+<wire x1="-53.34" y1="116.84" x2="-63.5" y2="116.84" width="0.1524" layer="91"/>
+<label x="-63.5" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="T_CLK"/>
+<wire x1="-53.34" y1="124.46" x2="-63.5" y2="124.46" width="0.1524" layer="91"/>
+<label x="-63.5" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="101,1,-66.04,96.52,CONN1G$2,MT,,,,"/>
-<approved hash="101,1,-50.8,96.52,CONN1G$3,MT,,,,"/>
-<approved hash="102,1,-2.54,154.94,+3V3,VCC,,,,"/>
-<approved hash="102,1,-7.62,154.94,5.0V,VCC_50,,,,"/>
-<approved hash="104,1,-7.62,154.94,IC1,+5V,VCC_50,,,"/>
-<approved hash="104,1,-2.54,154.94,IC1,VIO,VCC,,,"/>
-<approved hash="113,1,25.6696,180.34,POW2,,,,,"/>
-<approved hash="113,1,45.9896,180.34,POW1,,,,,"/>
-<approved hash="113,1,-100.313,170.18,R1,,,,,"/>
-<approved hash="113,1,-85.073,170.18,R3,,,,,"/>
-<approved hash="113,1,-95.233,170.18,R4,,,,,"/>
-<approved hash="113,1,-79.993,170.18,R5,,,,,"/>
-<approved hash="113,1,-113.047,149.86,R7,,,,,"/>
-<approved hash="113,1,-90.153,170.18,R6,,,,,"/>
-<approved hash="113,1,-7.3504,185.42,POW3,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
