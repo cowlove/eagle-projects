@@ -4652,6 +4652,7 @@ Parts Updated:
 <part name="CAP1" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="CAP2" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 <part name="BAT1" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
+<part name="I2C" library="SparkFun-Connectors" deviceset="QWIIC_CONNECTOR" device="" value="Vertical Qwiic Connector"/>
 </parts>
 <sheets>
 <sheet>
@@ -4703,6 +4704,9 @@ Parts Updated:
 <instance part="BAT1" gate="G$1" x="12.7" y="-27.94" smashed="yes">
 <attribute name="VALUE" x="10.16" y="-32.766" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="10.16" y="-22.352" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="I2C" gate="G$1" x="-30.48" y="-20.32" smashed="yes">
+<attribute name="NAME" x="-35.56" y="-12.446" size="1.778" layer="95" font="vector"/>
 </instance>
 </instances>
 <busses>
@@ -4815,6 +4819,11 @@ Parts Updated:
 <pinref part="BAT1" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="-27.94" x2="27.94" y2="-27.94" width="0.1524" layer="91"/>
 <label x="20.32" y="-27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-22.86" y1="-22.86" x2="-15.24" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-20.32" y="-22.86" size="1.778" layer="95"/>
+<pinref part="I2C" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VCHARGE" class="0">
@@ -4932,6 +4941,11 @@ Parts Updated:
 <wire x1="-5.08" y1="40.64" x2="-12.7" y2="40.64" width="0.1524" layer="91"/>
 <label x="-12.7" y="40.64" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-22.86" y1="-20.32" x2="-15.24" y2="-20.32" width="0.1524" layer="91"/>
+<label x="-20.32" y="-20.32" size="1.778" layer="95"/>
+<pinref part="I2C" gate="G$1" pin="2"/>
+</segment>
 </net>
 <net name="GPS_TX" class="0">
 <segment>
@@ -4968,6 +4982,11 @@ Parts Updated:
 <wire x1="-35.56" y1="20.32" x2="-48.26" y2="20.32" width="0.1524" layer="91"/>
 <label x="-48.26" y="20.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-22.86" y1="-15.24" x2="-15.24" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-20.32" y="-15.24" size="1.778" layer="95"/>
+<pinref part="I2C" gate="G$1" pin="4"/>
+</segment>
 </net>
 <net name="SDA1" class="0">
 <segment>
@@ -4979,6 +4998,11 @@ Parts Updated:
 <pinref part="JP1" gate="G$1" pin="IO21_SDA"/>
 <wire x1="-35.56" y1="25.4" x2="-48.26" y2="25.4" width="0.1524" layer="91"/>
 <label x="-48.26" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-22.86" y1="-17.78" x2="-15.24" y2="-17.78" width="0.1524" layer="91"/>
+<label x="-20.32" y="-17.78" size="1.778" layer="95"/>
+<pinref part="I2C" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="SWITCH" class="0">
