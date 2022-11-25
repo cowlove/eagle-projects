@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23,11 +23,11 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -1128,6 +1128,26 @@ Pin rows are offset 5mm as well
 <wire x1="0" y1="5.03" x2="0" y2="3.33" width="0.6" layer="46"/>
 <wire x1="8.64" y1="5.03" x2="8.64" y2="3.33" width="0.6" layer="46"/>
 </package>
+<package name="PEC11D_TH">
+<pad name="S" x="-2.4892" y="7.0104" drill="1.27" diameter="1.524" shape="square"/>
+<pad name="W" x="2.4892" y="7.0104" drill="1.27" diameter="1.524" shape="square"/>
+<pad name="A1" x="-2.4892" y="9.4996" drill="1.27" diameter="1.524" shape="square"/>
+<pad name="C1" x="0" y="9.4996" drill="1.27" diameter="1.524" shape="square"/>
+<pad name="B1" x="2.4892" y="9.4996" drill="1.27" diameter="1.524" shape="square"/>
+<pad name="A2" x="-2.4892" y="-7.493" drill="1.27" diameter="1.524" shape="square"/>
+<pad name="C2" x="0" y="-7.493" drill="1.27" diameter="1.524" shape="square"/>
+<pad name="B2" x="2.4892" y="-7.493" drill="1.27" diameter="1.524" shape="square"/>
+<pad name="P$9" x="-4.953" y="0.635" drill="1.524"/>
+<pad name="P$10" x="-4.953" y="-0.635" drill="1.524"/>
+<wire x1="-4.953" y1="0.635" x2="-4.953" y2="-0.635" width="1.524" layer="46"/>
+<wire x1="-4.953" y1="0.635" x2="-4.953" y2="-0.635" width="2.286" layer="1"/>
+<wire x1="-4.953" y1="0.635" x2="-4.953" y2="-0.635" width="2.286" layer="16"/>
+<pad name="P$11" x="4.953" y="0.635" drill="1.524"/>
+<pad name="P$12" x="4.953" y="-0.635" drill="1.524"/>
+<wire x1="4.953" y1="0.635" x2="4.953" y2="-0.635" width="1.524" layer="46"/>
+<wire x1="4.953" y1="0.635" x2="4.953" y2="-0.635" width="2.286" layer="1"/>
+<wire x1="4.953" y1="0.635" x2="4.953" y2="-0.635" width="2.286" layer="16"/>
+</package>
 </packages>
 <symbols>
 <symbol name="STEMMA_I2C">
@@ -1351,6 +1371,20 @@ Pin rows are offset 5mm as well
 <pin name="CC1" x="15.24" y="-5.08" length="short" rot="R180"/>
 <pin name="CC2" x="15.24" y="-7.62" length="short" rot="R180"/>
 <pin name="GND" x="15.24" y="-10.16" length="short" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="PEC11D">
+<wire x1="0" y1="10.16" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="0" y2="10.16" width="0.254" layer="94"/>
+<pin name="A1" x="-5.08" y="7.62" length="middle"/>
+<pin name="C1" x="-5.08" y="5.08" length="middle"/>
+<pin name="B1" x="-5.08" y="2.54" length="middle"/>
+<pin name="A2" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="C2" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="B2" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="S" x="2.54" y="-5.08" length="middle" rot="R90"/>
+<pin name="W" x="7.62" y="-5.08" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1737,6 +1771,28 @@ This was SPECIALLY designed to be used with our Graphic LCD Backpack.  Be sure y
 <connect gate="G$1" pin="CC2" pad="4"/>
 <connect gate="G$1" pin="GND" pad="1 6"/>
 <connect gate="G$1" pin="VCC" pad="2 5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PEC11D">
+<gates>
+<gate name="G$1" symbol="PEC11D" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="PEC11D" package="PEC11D_TH">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="B2" pad="B2"/>
+<connect gate="G$1" pin="C1" pad="C1"/>
+<connect gate="G$1" pin="C2" pad="C2"/>
+<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="W" pad="W"/>
 </connects>
 <technologies>
 <technology name=""/>
