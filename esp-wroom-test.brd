@@ -1235,7 +1235,8 @@ design rules under a new name.</description>
 <wire x1="20.7645" y1="30.6705" x2="20.574" y2="30.66" width="0.508" layer="1"/>
 <wire x1="26.8605" y1="21.05025" x2="26.8605" y2="25.146" width="0.508" layer="1"/>
 <wire x1="26.67" y1="20.85975" x2="26.8605" y2="21.05025" width="0.508" layer="1"/>
-<wire x1="26.8605" y1="25.146" x2="26.936" y2="25.146" width="0.508" layer="1"/>
+<wire x1="26.8605" y1="25.146" x2="26.924" y2="25.146" width="0.508" layer="1"/>
+<wire x1="26.924" y1="25.146" x2="26.936" y2="25.146" width="0.508" layer="1"/>
 <wire x1="26.67" y1="20.85975" x2="26.646" y2="20.828" width="0.508" layer="1"/>
 <wire x1="26.76525" y1="26.95575" x2="23.241" y2="30.48" width="0.508" layer="1"/>
 <wire x1="26.76525" y1="25.3365" x2="26.76525" y2="26.95575" width="0.508" layer="1"/>
@@ -1254,6 +1255,7 @@ design rules under a new name.</description>
 <wire x1="5.1435" y1="30.19425" x2="5.08" y2="30.226" width="0.508" layer="16"/>
 <wire x1="17.907" y1="30.48" x2="18.048" y2="30.682" width="0.508" layer="1"/>
 <via x="16.9545" y="30.099" extent="1-16" drill="0.35"/>
+<wire x1="25.908" y1="25.146" x2="26.924" y2="25.146" width="0.3048" layer="1"/>
 </signal>
 <signal name="VCC_HC" class="3">
 <contactref element="POW3B" pad="P$1"/>
@@ -1519,6 +1521,9 @@ design rules under a new name.</description>
 <wire x1="26.67" y1="21.62175" x2="26.67" y2="21.638" width="0.2286" layer="16"/>
 <wire x1="16.47825" y1="2.8575" x2="16.486" y2="2.828" width="0.2286" layer="1"/>
 <via x="16.66875" y="7.71525" extent="1-16" drill="0.35"/>
+</signal>
+<signal name="N$1">
+<wire x1="18.288" y1="24.13" x2="19.304" y2="24.13" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
