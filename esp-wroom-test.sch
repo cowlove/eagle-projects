@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,21 +39,21 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="58" name="b3D" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="58" name="b3D" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="yes" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -4536,31 +4536,31 @@ Spark Fun Electronics SKU : COM-00107</description>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun" deviceset="FRAME-LETTER" device=""/>
-<part name="POW3B" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
+<part name="POW3B" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206"/>
 <part name="U8" library="MF_IC_Power" deviceset="NCP1117LP" device="ST50T3G" value="NCP1117LPST50T3G"/>
-<part name="POW12" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="RGP00" library="00jim" deviceset="RESISTOR" device="_0603"/>
-<part name="REN" library="00jim" deviceset="RESISTOR" device="_0603"/>
-<part name="RLED" library="00jim" deviceset="RESISTOR" device="_0603"/>
-<part name="D1" library="00jim" deviceset="LED-RED" device="0603" value="RED"/>
-<part name="U$1" library="00jim" deviceset="AMAZON_BUTTON" device="B2010" value="AMAZON_BUTTONB2010"/>
+<part name="POW12" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206"/>
+<part name="RGP00" library="00jim" deviceset="RESISTOR" device="_1206"/>
+<part name="REN" library="00jim" deviceset="RESISTOR" device="_1206"/>
+<part name="RLED" library="00jim" deviceset="RESISTOR" device="_1206"/>
+<part name="D1" library="00jim" deviceset="LED-RED" device="LILYPAD" value="RED"/>
+<part name="SW2" library="00jim" deviceset="AMAZON_BUTTON" device="B2010" value="AMAZON_BUTTONB2010"/>
 <part name="U$3" library="ESP32" deviceset="ESP32-WROOM" device=""/>
-<part name="POW5" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
+<part name="POW5" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206"/>
 <part name="TT1" library="MF_Discrete_Semiconductor" deviceset="NPN_BJT" device="_SOT-23-3" technology="MMBT3904" value="MF-DSC-SOT233-MMBT3904"/>
 <part name="TT2" library="MF_Discrete_Semiconductor" deviceset="NPN_BJT" device="_SOT-23-3" technology="MMBT3904" value="MF-DSC-SOT233-MMBT3904"/>
-<part name="R2" library="00jim" deviceset="RESISTOR" device="_0603"/>
-<part name="R9" library="00jim" deviceset="RESISTOR" device="_0603"/>
-<part name="CEN" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
+<part name="R2" library="00jim" deviceset="RESISTOR" device="_1206"/>
+<part name="R9" library="00jim" deviceset="RESISTOR" device="_1206"/>
+<part name="CEN" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206"/>
 <part name="J1" library="00jim" deviceset="CONN_06" device=""/>
 <part name="U3" library="SparkFun-IC-Power" deviceset="V_REG_78XX" device="SINK"/>
-<part name="POW3A" library="MF_Passives" deviceset="CAPACITOR_NP" device="_0603"/>
-<part name="U$2" library="00jim" deviceset="AMAZON_BUTTON" device="B2010"/>
+<part name="POW3A" library="MF_Passives" deviceset="CAPACITOR_NP" device="_1206"/>
+<part name="SW1" library="00jim" deviceset="AMAZON_BUTTON" device="B2010"/>
 <part name="R4" library="00jim" deviceset="JUMPER" device=""/>
 <part name="R5" library="00jim" deviceset="JUMPER" device=""/>
 <part name="J3" library="SparkFun-Connectors" deviceset="CONN_10" device=""/>
 <part name="J4" library="00jim" deviceset="QWIIC_CONNECTOR" device="JST04_1MM_HOLE" value="Vertical Qwiic Connector"/>
-<part name="RCAN1" library="00jim" deviceset="RESISTOR" device="_0603"/>
-<part name="RCAN2" library="00jim" deviceset="RESISTOR" device="_0603"/>
+<part name="PU1" library="00jim" deviceset="RESISTOR" device="_1206"/>
+<part name="PU2" library="00jim" deviceset="RESISTOR" device="_1206"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_02" device=""/>
 </parts>
 <sheets>
@@ -4594,7 +4594,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <attribute name="VALUE" x="-27.94" y="195.58" size="1.016" layer="96" font="vector" rot="MR0"/>
 </instance>
 <instance part="POW12" gate="G$1" x="-50.8" y="170.18" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-47.244" y="172.72" size="1.016" layer="95" font="vector" rot="MR270" align="top-left"/>
+<attribute name="NAME" x="-54.864" y="172.72" size="1.016" layer="95" font="vector" rot="MR270" align="top-left"/>
 <attribute name="VALUE" x="-53.34" y="168.656" size="1.016" layer="96" font="vector" rot="MR0"/>
 </instance>
 <instance part="RGP00" gate="G$1" x="-104.14" y="180.34" smashed="yes" rot="R180">
@@ -4613,10 +4613,10 @@ Spark Fun Electronics SKU : COM-00107</description>
 <attribute name="NAME" x="-80.264" y="180.848" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-78.105" y="180.848" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-104.14" y="167.64" smashed="yes"/>
+<instance part="SW2" gate="G$1" x="-104.14" y="167.64" smashed="yes"/>
 <instance part="U$3" gate="G$1" x="-160.02" y="96.52" smashed="yes"/>
 <instance part="POW5" gate="G$1" x="-30.48" y="167.64" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-33.02" y="169.164" size="1.016" layer="95" font="vector" rot="MR0" align="top-left"/>
+<attribute name="NAME" x="-30.48" y="169.164" size="1.016" layer="95" font="vector" rot="MR0" align="top-left"/>
 <attribute name="VALUE" x="-33.02" y="166.116" size="1.016" layer="96" font="vector" rot="MR0"/>
 </instance>
 <instance part="TT1" gate="G$1" x="-144.78" y="175.26" smashed="yes" rot="MR0">
@@ -4634,7 +4634,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <attribute name="VALUE" x="-119.38" y="171.704" size="1.016" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="CEN" gate="G$1" x="-99.06" y="167.64" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-101.6" y="169.164" size="1.016" layer="95" font="vector" rot="MR0" align="top-left"/>
+<attribute name="NAME" x="-96.52" y="164.084" size="1.016" layer="95" font="vector" rot="MR0" align="top-left"/>
 <attribute name="VALUE" x="-101.6" y="166.116" size="1.016" layer="96" font="vector" rot="MR0"/>
 </instance>
 <instance part="J1" gate="G$1" x="-167.64" y="175.26" smashed="yes">
@@ -4649,7 +4649,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <attribute name="NAME" x="-53.34" y="189.484" size="1.016" layer="95" font="vector" rot="MR0" align="top-left"/>
 <attribute name="VALUE" x="-53.34" y="186.436" size="1.016" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="U$2" gate="G$1" x="-91.44" y="167.64" smashed="yes"/>
+<instance part="SW1" gate="G$1" x="-91.44" y="167.64" smashed="yes"/>
 <instance part="R4" gate="G$1" x="-55.88" y="182.88" smashed="yes" rot="R270">
 <attribute name="NAME" x="-54.356" y="180.34" size="1.016" layer="95" font="vector" rot="R270" align="top-left"/>
 </instance>
@@ -4663,12 +4663,12 @@ Spark Fun Electronics SKU : COM-00107</description>
 <instance part="J4" gate="G$1" x="27.94" y="86.36" smashed="yes">
 <attribute name="NAME" x="22.86" y="94.234" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="RCAN1" gate="G$1" x="10.16" y="88.9" smashed="yes" rot="R180">
-<attribute name="NAME" x="7.62" y="87.376" size="1.016" layer="95" font="vector" rot="R180" align="top-left"/>
+<instance part="PU1" gate="G$1" x="10.16" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="9.144" y="91.44" size="1.016" layer="95" font="vector" rot="R270" align="top-left"/>
 <attribute name="VALUE" x="7.62" y="90.424" size="1.016" layer="96" font="vector" rot="R180"/>
 </instance>
-<instance part="RCAN2" gate="G$1" x="15.24" y="88.9" smashed="yes" rot="R180">
-<attribute name="NAME" x="12.7" y="87.376" size="1.016" layer="95" font="vector" rot="R180" align="top-left"/>
+<instance part="PU2" gate="G$1" x="15.24" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.224" y="91.44" size="1.016" layer="95" font="vector" rot="R270" align="top-left"/>
 <attribute name="VALUE" x="12.7" y="90.424" size="1.016" layer="96" font="vector" rot="R180"/>
 </instance>
 <instance part="J2" gate="G$1" x="-78.74" y="137.16" smashed="yes">
@@ -4685,12 +4685,12 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="-104.14" y1="163.576" x2="-104.14" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="162.56" x2="-109.22" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="-109.22" y1="162.56" x2="-109.22" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
+<pinref part="SW2" gate="G$1" pin="P$2"/>
 <pinref part="CEN" gate="G$1" pin="P$2"/>
 <wire x1="-99.06" y1="165.1" x2="-99.06" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="162.56" x2="-104.14" y2="162.56" width="0.1524" layer="91"/>
 <junction x="-104.14" y="162.56"/>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
+<pinref part="SW1" gate="G$1" pin="P$2"/>
 <wire x1="-91.44" y1="163.576" x2="-91.44" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="162.56" x2="-99.06" y2="162.56" width="0.1524" layer="91"/>
 <junction x="-99.06" y="162.56"/>
@@ -4773,8 +4773,8 @@ Spark Fun Electronics SKU : COM-00107</description>
 <label x="17.78" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RCAN2" gate="G$1" pin="P$2"/>
-<pinref part="RCAN1" gate="G$1" pin="P$2"/>
+<pinref part="PU2" gate="G$1" pin="P$2"/>
+<pinref part="PU1" gate="G$1" pin="P$2"/>
 <wire x1="15.24" y1="93.98" x2="10.16" y2="93.98" width="0.1524" layer="91" style="longdash"/>
 <wire x1="10.16" y1="93.98" x2="5.08" y2="93.98" width="0.1524" layer="91" style="longdash"/>
 <junction x="10.16" y="93.98"/>
@@ -4811,7 +4811,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <pinref part="RGP00" gate="G$1" pin="P$1"/>
 <label x="-104.14" y="172.72" size="1.778" layer="95" rot="R270"/>
 <wire x1="-104.14" y1="171.704" x2="-104.14" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
+<pinref part="SW2" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GPIO0"/>
@@ -4835,7 +4835,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="-99.06" y1="172.72" x2="-91.44" y2="172.72" width="0.1524" layer="91"/>
 <junction x="-99.06" y="172.72"/>
 <wire x1="-91.44" y1="172.72" x2="-91.44" y2="171.704" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
+<pinref part="SW1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="EN"/>
@@ -5084,7 +5084,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <label x="-127" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RCAN2" gate="G$1" pin="P$1"/>
+<pinref part="PU2" gate="G$1" pin="P$1"/>
 <wire x1="15.24" y1="83.82" x2="15.24" y2="78.74" width="0.1524" layer="91" style="longdash"/>
 <label x="12.7" y="83.82" size="1.778" layer="95" rot="R270"/>
 </segment>
@@ -5101,7 +5101,7 @@ Spark Fun Electronics SKU : COM-00107</description>
 <label x="-127" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="RCAN1" gate="G$1" pin="P$1"/>
+<pinref part="PU1" gate="G$1" pin="P$1"/>
 <wire x1="10.16" y1="83.82" x2="10.16" y2="78.74" width="0.1524" layer="91" style="longdash"/>
 <label x="7.62" y="83.82" size="1.778" layer="95" rot="R270"/>
 </segment>
